@@ -32,7 +32,6 @@ body {
   border-radius: 32px;
   display: flex;
   flex-direction: column;
-
   box-shadow:
     0 16px 64px rgba(0, 0, 0, 0.95),
     0 4px 0 #1a1208,
@@ -101,7 +100,7 @@ body {
   }
 }
 
-.screen-content {
+.screen-inner {
   position: absolute;
   inset: 0;
   overflow-y: auto;
@@ -110,112 +109,11 @@ body {
   color: #d4f0a0;
   font-family: var(--font-body);
 }
-
-.ch-bar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: #010801;
-  border-bottom: 1px solid #1a2a0a;
-  padding: 0.4rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.screen-inner::-webkit-scrollbar {
+  display: none;
 }
 
-.vak-banner {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: #3a5a1a;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.ch-back {
-  font-family: var(--font-body);
-  color: #3a5a1a;
-  text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
-}
-.ch-back:hover {
-  color: #d4f0a0;
-}
-
-.content {
-  padding: 1.5rem 2rem 3rem;
-}
-
-.vak-header {
-  padding-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #1a2a0a;
-}
-
-.vak-title {
-  font-family: var(--font-header);
-  font-size: clamp(3rem, 7vw, 5rem);
-  color: #d4f0a0;
-  text-shadow: 0 0 20px rgba(168, 220, 80, 0.3);
-  line-height: 1;
-  margin-bottom: 0.75rem;
-}
-
-.vak-desc {
-  font-family: var(--font-body);
+.temporary {
+  padding: 2rem;
   font-size: 1.2rem;
-  color: #6a9a3a;
-  line-height: 1.8;
-}
-
-.vak-image {
-  background: #020a02;
-  border: 1px solid #1a3a0a;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  filter: brightness(0.7);
-  max-height: 500px;
-}
-
-.sectie {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #1a2a0a;
-}
-
-.sectie-label {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: #aada68;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-}
-
-.sectie-body {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: #6a9a3a;
-  line-height: 1.8;
-}
-
-.vak-link {
-  font-family: var(--font-body);
-  font-size: 0.6rem;
-  color: #aada68;
-  text-decoration: none;
-  border: 1px solid #aada68;
-  padding: 0.5rem 1rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition:
-    background 0.15s,
-    color 0.15s;
-}
-.vak-link:hover {
-  background: #88ae52;
-  color: #030b03;
 }
