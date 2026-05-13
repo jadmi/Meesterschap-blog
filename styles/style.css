@@ -327,3 +327,9 @@ body {
 .reflection {
   margin: 3rem 0;
 }
+
+.vak-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
