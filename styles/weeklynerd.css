@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "VT323";
+  src: url("../fonts/VT323-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url("../fonts/ShareTechMono-Regular.ttf") format("truetype");
+}
+
+:root {
+  --font-header: "VT323", monospace;
+  --font-body: "Share Tech Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0d0a06;
+}
+
+.tv-outer {
+  position: fixed;
+  inset: 1em;
+  background: #2e2210;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 16px 64px rgba(0, 0, 0, 0.95),
+    0 4px 0 #1a1208,
+    inset 0 2px 0 rgba(255, 255, 255, 0.06),
+    inset 0 0 0 8px #1e1609,
+    inset 0 0 0 12px #3a2a14,
+    inset 0 0 0 16px #1e1609;
+}
+
+.screen {
+  flex: 1;
+  margin: 4vh 2rem 8vh;
+  position: relative;
+  overflow: hidden;
+  background: #030b03;
+  border-radius: 14px;
+  box-shadow:
+    inset 0 0 80px rgba(0, 0, 0, 0.8),
+    inset 0 0 60px rgba(40, 80, 20, 0.08);
+}
+
+.screen::before {
+  display: block;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.2;
+  animation: scanline 12s linear infinite;
+}
+
+.screen::after {
+  display: block;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 19;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(0, 0, 0, 0.06) 52%
+  );
+  background-size: 100% 5.3px;
+  animation: scanlines 1s steps(60) infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translate3d(0, 100vh, 0);
+  }
+  100% {
+    transform: translate3d(0, -100vh, 0);
+  }
+}
+@keyframes scanlines {
+  0% {
+    background-position: 0 50%;
+  }
+}
+
+.screen-inner {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  z-index: 5;
+  color: #d4f0a0;
+  font-family: var(--font-body);
+}
+.screen-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.ch-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #010801;
+  border-bottom: 1px solid #1a2a0a;
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ch-banner {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #3a5a1a;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.ch-back {
+  font-family: var(--font-body);
+  color: #3a5a1a;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+.ch-back:hover {
+  color: #d4f0a0;
+}
+
+.content {
+  padding: 1.5rem 2rem 3rem;
+}
+
+.speaker-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #1a2a0a;
+}
+
+.speaker-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #1a3a0a;
+  background: #020a02;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-header);
+  font-size: 2rem;
+  color: #3a5a1a;
+}
+
+.speaker-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.3) brightness(0.7);
+}
+
+.speaker-info {
+  flex: 1;
+}
+
+.speaker-episode {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #2a4a0a;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.speaker-name {
+  font-family: var(--font-header);
+  font-size: clamp(3rem, 7vw, 5rem);
+  color: #d4f0a0;
+  text-shadow: 0 0 20px rgba(168, 220, 80, 0.3);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.speaker-title {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: #5a8a2a;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+
+.sectie {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #1a2a0a;
+}
+
+.sectie-label {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #aada68;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.sectie-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #6a9a3a;
+  line-height: 1.8;
+}
+
+.quote {
+  border-left: 2px solid #aada68;
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0;
+  font-family: var(--font-header);
+  font-size: 1.6rem;
+  color: #aada68;
+  line-height: 1.3;
+}
