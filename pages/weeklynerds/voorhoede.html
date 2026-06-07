@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Nerd - De Voorhoede</title>
+  <link rel="stylesheet" href="../../styles/weeklynerd.css">
+</head>
+
+<body>
+  <div class="tv-outer">
+    <div class="screen">
+      <div class="screen-inner">
+
+        <div class="ch-bar">
+          <span class="ch-banner">// S02E02 · Weekly Nerd</span>
+          <a href="../../index.html" class="ch-back">
+            < terug naar overzicht</a>
+        </div>
+
+        <div class="content">
+
+          <div class="speaker-banner">
+            <img class="speaker-avatar" src=""></img>
+            <div class="speaker-info">
+              <p class="speaker-episode">S02E02</p>
+              <h1 class="speaker-name">De Voorhoede</h1>
+              <p class="speaker-title">Web dev, Design systems & Offline-first</p>
+            </div>
+          </div>
+
+          <div class="sectie">
+            <h2 class="sectie-label">Wat werd er verteld?</h2>
+            <p class="sectie-body"></p>
+
+            <h2 class="sectie-label">Wat neem ik mee?</h2>
+            <p class="sectie-body"></p>
+          </div>
+
+          <div class="sectie">
+            <h2 class="sectie-label">Aantekeningen</h2>
+
+            <h3 class="sublabel">1 · Marleen — Medior web developer</h3>
+            <p class="sectie-body">Marleen werkt als medior web developer bij De Voorhoede. Ze bouwde onder andere een
+              interactieve website voor het DGTL festival, waarbij ze technieken zoals mix-blend-mode en clip-paths
+              toepaste. De Voorhoede doet puur het bouwen — niet het design. Klanten plaatsen zelf content via een
+              headless CMS zoals DatoCMS.</p>
+            <p class="sectie-body">Klanten die technisch niet aangelegd zijn stellen soms onduidelijke vragen, wat kan
+              leiden tot interessante situaties. Technische zaken uitleggen aan niet-technische klanten is een vak op
+              zich. Een baan als web developer is dan ook niet alleen coderen — menselijke en communicatieve skills zijn
+              minstens zo belangrijk.</p>
+
+            <h3 class="sublabel">2 · Peter — Accessibility expert</h3>
+            <p class="sectie-body">Peter is senior front-end developer en de accessibility expert binnen De Voorhoede.
+              Hij vertelde over het NL Design System en hoe De Voorhoede meewerkt aan het herbouwen van een website
+              door componenten toe te voegen aan Storybook. Elk nieuw component moet direct werken voor meerdere
+              potentiële klanten tegelijk.</p>
+            <p class="sectie-body">De styling verloopt via design tokens: twee kanten van CSS — de kant waar je de
+              waardes instelt en de kant waar ze van toepassing zijn. Via een JSON-bestand kun je de waardes per
+              huisstijl aanpassen. Voor elke story rekent Peter 20% extra tijd voor toegankelijkheid, omdat dingen
+              altijd complexer blijken dan je in eerste instantie denkt.</p>
+
+            <div class="quote">"Door jouw code heb je fysieke impact op iemand."</div>
+
+            <h3 class="sublabel">3 · Bas de Greeuw — Offline-first</h3>
+            <p class="sectie-body">Bas introduceerde het offline-first design pattern aan de hand van een PWA voor
+              liftinspecties — in een lift heb je geen internet. Het patroon draait om twee kernprincipes: start bij
+              geen verbinding, en sla lokaal op om later te synchroniseren.</p>
+            <p class="sectie-body">Voordelen: altijd toegang (ook in het vliegtuig), snellere interface zonder
+              wachttijd en besparing op data en batterij. Uitdagingen zijn conflictbeheer (wie heeft autoriteit?),
+              slimme caching en data pruning, en duidelijke sync-statusfeedback aan de gebruiker.</p>
+            <p class="sectie-body">De architectuur loopt van het user device via local storage (IndexedDB) door een
+              sync layer naar de cloud server. De drie lagen zijn interceptie via service workers, opslag via IndexedDB,
+              en synchronisatie. Libraries zoals Dexie maken dit beheerbaar. Let wel op merge conflicts bij meerdere
+              apparaten per gebruiker. Kies offline-first wanneer slechte connectiviteit verwacht wordt, kritieke data
+              altijd beschikbaar moet zijn, of bij productiviteits- en field tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
