@@ -32,30 +32,61 @@
 
           <div class="sectie">
             <h2 class="sectie-label">Wat werd er verteld?</h2>
-            <p class="sectie-body"></p>
+            <p class="sectie-body">Peter vertelde over de geschiedenis van browsers, van de eerste webbrowser tot de
+              moderne browsers. Hij praatte over de ontwikkeling van verschillende browsers en hun invloed op het web.
+              Daarbij ook wat technische punten zoals de verschillen tussen de rendering engines.</p>
 
             <h2 class="sectie-label">Wat neem ik mee?</h2>
-            <p class="sectie-body">Voor deze nerd een meer technisch onderwerp, de history van browsers is iets waar ik
-              niet echt over nadenk. Iets wat handig is om te weten is het principe van backwards compatibility: als het
-              ooit heeft gewerkt in een browser zal het altijd blijven werken. Daarnaast gebruikte ik wel eens defer en
-              de script-tag onderaan door elkaar, maar weet ik nu dat defer de moderne oplossing is.</p>
-            <p class="sectie-body">Ik moet wel zeggen dat deze nerd nogal langdradig werd toen het over elke browser
-              ooit ging en daardoor richting het einde mijn aandacht wegviel.</p>
-            <p class="sectie-body">Het was wel leuk om te zien hoe gepassioneerd Peter over het onderwerp vertelde.</p>
+            <p class="sectie-body">Voor deze nerd was er een meer technisch onderwerp, de history van browsers. Een
+              onderwerp
+              waar ik
+              niet veel over weet behalve dat Internet Explorer een oude populaire browser is. Het principe wat ik
+              meeneem is het principe van backwards compatibility: als het
+              ooit heeft gewerkt in een browser zal het altijd blijven werken. Je hoeft je dus geen zorgen te maken of
+              bepaalde functies op je websites blijven werken. Daarnaast gebruikte ik wel eens defer en
+              de script-tag onderaan door elkaar om javascript in te laden, maar weet ik nu dat defer de moderne (en
+              betere) oplossing is. </p>
+            <p class="sectie-body">Het was een nogal langdradig verhaal, de history van browsers, omdat hij letterlijk
+              elke browser langs ging, maar Peter is erg goed in het vertellen en bracht het verhaal gepassioneerd over
+              op een leuke
+              manier.</p>
           </div>
 
           <div class="sectie">
             <h2 class="sectie-label">Aantekeningen</h2>
-            <p class="sectie-body">Een browser bestaat uit meerdere onderdelen: een rendering engine die HTML en CSS
-              parsed en de DOM en AOM opbouwt (zoals Blink/Chromium), een aparte JavaScript engine, een interface en het
-              Accessibility Object Model dat reageert op ARIA.</p>
             <div class="quote">"Als iets ooit in een browser heeft gewerkt zal het voor eens en altijd werken."</div>
-            <p class="sectie-body">Scripts kun je op drie manieren laden: script voert meteen
-              uit en blokkeert rendering, defer voert later uit en async voert uit wanneer het
-              uitkomt. De browsergeschiedenis gaat van Mosaic (1993) via Netscape, IE, Opera, Safari, Firefox en Chrome
-              naar Safari iOS en het nieuwe Ladybird (2024).</p>
+
+            <p class="sectie-body">Een browser bestaat uit meerdere onderdelen: een rendering engine die HTML en CSS
+              parsed en de DOM/AOM opbouwt, een aparte JavaScript engine, een interface en het Accessibility Object
+              Model
+              dat reageert op ARIA. De rendering engine (Blink/Chromium of Gecko) is niet verantwoordelijk voor de
+              interface of de JS engine.</p>
+
+            <p class="sectie-body">JavaScript bestaat uit twee lagen: de JS core (if-statements, for-loops etc.) en de
+              DOM: de manier waarop JS een HTML-pagina kan aanspreken en wijzigen.</p>
+
+            <p class="sectie-body">Scripts kun je op drie manieren laden:</p>
+            <ul class="sectie-body">
+              <li>script src — do it now</li>
+              <li>script defer src — do it later</li>
+              <li>script async src — i don't care when you do it, just not now</li>
+            </ul>
+
+            <p class="sectie-body">CSS is altijd render-blocking. Backward compatibility betekent dat wat ooit werkte
+              altijd blijft werken — denk aan form.object.elements, body bgcolor en frameset (waarvan iframe een
+              afstammeling is).</p>
+
+            <p class="sectie-body">Praktische tips: wees voorzichtig met layout-wijzigingen, gebruik media queries en
+              laat het daarna met rust, en pas op voor "popcorn layout", elementen die verspringen.</p>
+
+            <p class="sectie-body">Browsergeschiedenis: WWW Browser (1990) → Mosaic (1993) → Netscape (1994) →
+              Internet Explorer (1995) → Opera (1995) → Safari (2003) → Firefox (2004) → Safari iOS (2007) → Chrome
+              (2008) → Ladybird (2024).</p>
           </div>
-          <a href="nils.html" class="vak-link">S01E03 ></a>
+          <div class="ep-nav">
+            <a href="kilian.html" class="vak-link">< S01E01</a>
+            <a href="nils.html" class="vak-link">S01E03 ></a>
+          </div>
         </div>
       </div>
     </div>

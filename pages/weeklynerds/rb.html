@@ -32,29 +32,56 @@
 
           <div class="sectie">
             <h2 class="sectie-label">Wat werd er verteld?</h2>
-            <p class="sectie-body"></p>
+            <p class="sectie-body">Deze nerd ging over het ontwerpen van een robuust en toegankelijk formulier, aan de
+              hand van de NL design system richtlijnen. Waar moet je aan denken? Wat zijn de belangrijkste principes?
+            </p>
 
             <h2 class="sectie-label">Wat neem ik mee?</h2>
-            <p class="sectie-body">Ik vond bij deze spreking het vooral interessant hoe groot het team achter NL Design
+            <p class="sectie-body">Het was richting het einde van BT, maar ik heb zeker wat toegankelijkheidsdingetjes
+              meegenomen voor toepassing bij het
+              formulier van HCD. Daarbij is de documentatie van het NL Design System erg nuttig voor als ik toekomstige
+              formulieren zou bouwen.</p>
+            <p class="sectie-body">Ik vond bij deze spreking ook interessant hoe groot het team achter NL Design
               System is en dat er zoveel mensen aan samenwerken als soort community project.</p>
-            <p class="sectie-body">Verder heb ik wat toegankelijkheidsdingetjes meegenomen voor toepassing bij het
-              formulier van HCD.</p>
           </div>
 
           <div class="sectie">
             <h2 class="sectie-label">Aantekeningen</h2>
-            <p class="sectie-body">Een goed formulier volgt een vaste opbouw: intro → vragen → controle → foutoverzicht
-              → bevestiging. Vraag alleen noodzakelijke gegevens. Verplicht/niet verplicht altijd in tekst aangeven,
-              niet alleen met een asterisk. Zichtbare labeltekst moet altijd matchen met het aria-label of title
-              attribuut.</p>
-            <div class="quote">"Beschrijving en foutmelding koppelen via aria-describedby — de volgorde is: label →
-              beschrijving → foutmelding → invoerveld."</div>
-            <p class="sectie-body">Minimale componentgrootte is 44×44px. Gebruik bdi translate="no" op de controlepagina
-              om gebruikersinvoer niet te laten vertalen. Logical CSS properties zijn belangrijk voor
-              RTL-taalondersteuning. Elk element moet focusbaar zijn en fouten moeten automatisch worden voorgelezen
-              door screenreaders.</p>
+            <p class="sectie-body">Kernboodschap: toegankelijke formulieren vereisen goede structuur, duidelijke
+              feedback en robuuste semantiek. NL Design System is een community project met een groot team van
+              bijdragers.</p>
+
+            <p class="sectie-body">Een goed formulier volgt een vaste opbouw: introductie → vragen → controle →
+              foutoverzicht → bevestiging. Vraag alleen noodzakelijke gegevens en geef verplicht/niet verplicht altijd
+              in tekst aan, niet alleen met een asterisk. Bied de mogelijkheid om op te slaan en later verder te gaan.
+            </p>
+
+            <p class="sectie-body">Labels en beschrijvingen: aria-label of title moet altijd de zichtbare labeltekst
+              bevatten, anders werkt spraakbesturing niet. Essentiële uitleg altijd zichtbaar, nooit verstopt in een
+              tooltip. Beschrijvingen en foutmeldingen koppelen via aria-describedby — bij radiogroups aan de fieldset.
+              Browser autocomplete inschakelen.</p>
+
+            <p class="sectie-body">Validatie en controle:</p>
+            <ul class="sectie-body">
+              <li>Foutenoverzicht bovenaan, klikbaar, focus op eerste fout</li>
+              <li>Error: rode lijn langs de hele input group</li>
+              <li>Laatste stap toont samenvatting van alle ingevoerde gegevens</li>
+              <li>bdi translate="no" op controle- en bevestigingspagina — voorkomt dat userinvoer vertaald wordt</li>
+              <li>Logical CSS properties (inline-size, block-size) voor RTL-taalondersteuning</li>
+            </ul>
+
+            <p class="sectie-body">Design: minimale componentgrootte 44×44px, kleurcontrast checken inclusief randen,
+              voortgang tonen boven het formulier in tekst ("Stap 2/4"), buttons onderaan in een ul inclusief "opslaan"
+              naast "volgende".</p>
+
+            <p class="sectie-body">Toetsenbord en screenreader: elk element toetsenbord-bereikbaar, tabvolgorde van
+              boven naar beneden en links naar rechts, focus altijd zichtbaar, statusupdates en foutfeedback automatisch
+              voorgelezen, stappen hoorbaar aangekondigd.</p>
           </div>
-          <a href="rosa.html" class="vak-link">S01E05 ></a>
+          <div class="ep-nav">
+            <a href="nils.html" class="vak-link">< S01E03</a>
+            <a href="rosa.html" class="vak-link">S01E05 ></a>
+          </div>
         </div>
       </div>
     </div>
