@@ -200,9 +200,19 @@ body {
   font-size: 1rem;
   color: #6a9a3a;
   line-height: 1.8;
+  max-width: 60%;
+  margin-top: 1rem;
 }
 
-.vak-link {
+.vak-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.vak-link,
+.project-link {
+  display: inline-block;
   font-family: var(--font-body);
   font-size: 0.6rem;
   color: #aada68;
@@ -218,4 +228,8 @@ body {
 .vak-link:hover {
   background: #88ae52;
   color: #030b03;
+}
+
+.project-link {
+  margin-top: 1rem;
 }
