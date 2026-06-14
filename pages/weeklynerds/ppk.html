@@ -56,30 +56,29 @@
             <h2 class="sectie-label">Aantekeningen</h2>
             <div class="quote">"Als iets ooit in een browser heeft gewerkt zal het voor eens en altijd werken."</div>
 
+            <h3 class="subheader">Hoe werkt een browser?</h3>
             <p class="sectie-body">Een browser bestaat uit meerdere onderdelen: een rendering engine die HTML en CSS
               parsed en de DOM/AOM opbouwt, een aparte JavaScript engine, een interface en het Accessibility Object
-              Model
-              dat reageert op ARIA. De rendering engine (Blink/Chromium of Gecko) is niet verantwoordelijk voor de
-              interface of de JS engine.</p>
-
+              Model dat reageert op ARIA. De rendering engine (Blink/Chromium of Gecko) is niet verantwoordelijk voor
+              de interface of de JS engine.</p>
             <p class="sectie-body">JavaScript bestaat uit twee lagen: de JS core (if-statements, for-loops etc.) en de
               DOM: de manier waarop JS een HTML-pagina kan aanspreken en wijzigen.</p>
 
-            <p class="sectie-body">Scripts kun je op drie manieren laden:</p>
+            <h3 class="subheader">JavaScript laden</h3>
             <ul class="sectie-body">
               <li>script src — do it now</li>
               <li>script defer src — do it later</li>
               <li>script async src — i don't care when you do it, just not now</li>
             </ul>
 
+            <h3 class="subheader">Backward compatibility</h3>
             <p class="sectie-body">CSS is altijd render-blocking. Backward compatibility betekent dat wat ooit werkte
-              altijd blijft werken — denk aan form.object.elements, body bgcolor en frameset (waarvan iframe een
-              afstammeling is).</p>
+              altijd blijft werken. Denk aan form.object.elements, body bgcolor en frameset (waarvan iframe een
+              afstammeling is). Wees voorzichtig met layout-wijzigingen, gebruik media queries en laat het daarna met
+              rust. Pas op voor "popcorn layout": elementen die verspringen.</p>
 
-            <p class="sectie-body">Praktische tips: wees voorzichtig met layout-wijzigingen, gebruik media queries en
-              laat het daarna met rust, en pas op voor "popcorn layout", elementen die verspringen.</p>
-
-            <p class="sectie-body">Browsergeschiedenis: WWW Browser (1990) → Mosaic (1993) → Netscape (1994) →
+            <h3 class="subheader">Browsergeschiedenis</h3>
+            <p class="sectie-body">WWW Browser (1990) → Mosaic (1993) → Netscape (1994) →
               Internet Explorer (1995) → Opera (1995) → Safari (2003) → Firefox (2004) → Safari iOS (2007) → Chrome
               (2008) → Ladybird (2024).</p>
           </div>

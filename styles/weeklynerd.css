@@ -278,11 +278,11 @@ ul.sectie-body {
   color: #030b03;
 }
 
-.sublabel {
+.subheader {
   font-family: var(--font-body);
   font-size: 1rem;
   color: #aada68;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin: 1.5rem 1rem;
+  margin-top: 1.5rem;
 }

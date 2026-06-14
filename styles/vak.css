@@ -225,7 +225,8 @@ body {
     background 0.15s,
     color 0.15s;
 }
-.vak-link:hover {
+.vak-link:hover,
+.project-link:hover {
   background: #88ae52;
   color: #030b03;
 }
