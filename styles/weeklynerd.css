@@ -144,7 +144,6 @@ body {
 
 .content {
   padding: 1.5rem 2rem 3rem;
-  max-width: 70vw;
 }
 
 .speaker-banner {
@@ -213,6 +212,8 @@ body {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #1a2a0a;
+  /* https://web.dev/learn/css/sizing */
+  max-width: 90ch;
 }
 
 .sectie-label {
