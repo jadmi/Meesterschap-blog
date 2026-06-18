@@ -168,6 +168,16 @@ body {
   line-height: 1.8;
 }
 
+.vak-video {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  border: 1px solid #1a3a0a;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
 .vak-image {
   background: #020a02;
   border: 1px solid #1a3a0a;
@@ -193,6 +203,7 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
+  margin-top: 1rem;
 }
 
 .sectie-body {
@@ -200,7 +211,7 @@ body {
   font-size: 1rem;
   color: #6a9a3a;
   line-height: 1.8;
-  max-width: 60%;
+  max-width: 800px;
   margin-top: 1rem;
 }
 
@@ -242,4 +253,22 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-top: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .screen {
+    margin: 2vh 1rem 4vh;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .ch-bar {
+    gap: 1rem;
+  }
+
+  .screen-content {
+    overflow-x: hidden;
+  }
 }

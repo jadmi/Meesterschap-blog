@@ -202,6 +202,7 @@ body {
   border: 2px solid #1a3a0a;
   padding: 2rem;
   cursor: pointer;
+  height: 100%;
 }
 
 .vak:hover {
@@ -322,6 +323,7 @@ body {
   color: #5a8a2a;
   line-height: 1.5;
   margin-top: 1rem;
+  max-width: 800px;
 }
 
 .weekly-nerd,
@@ -333,4 +335,22 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+@media (max-width: 640px) {
+  .screen {
+    margin: 3vh 2rem 5vh;
+  }
+
+  .screen-content {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vak {
+    padding: 1rem;
+  }
 }
