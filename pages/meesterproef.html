@@ -1,49 +1,168 @@
 <!doctype html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Titel</title>
-    <link rel="stylesheet" href="../styles/meesterproef.css" />
-  </head>
-  <body>
-    <div class="tv-outer">
-      <div class="screen">
-        <div class="screen-inner">
-          <p class="temporary">
-            Leerdoel 1: Ik wil mijn professionele communicatie ontwikkelen in
-            samenwerking met een echte opdrachtgever door klantwensen actief op
-            te halen, deze te vertalen naar concrete keuzes in ons werk en daar
-            vervolgens helder over terug communiceren. Aanvullend doe ik dit
-            door tijdens de briefings een proactieve houding te hebben,
-            duidelijke vragen te stellen en de wensen duidelijk in kaart te
-            brengen. Vervolgens vertalen we deze wensen en nemen we de feedback
-            mee.
-          </p>
 
-          <p class="temporary">
-            Leerdoel 2: Tijdens de meesterproef professioneel samenwerken in een
-            teamsetting door zowel de communicatie als de technische
-            samenwerking gestructureerd aan te pakken. Dit wil ik doen door
-            vooraf duidelijke afspraken te maken over taakverdeling,
-            communicatie en codestandaarden en deze actief bij te houden
-            gedurende het project.
-          </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+  <title>Meesterproef</title>
+    
+  <link rel="stylesheet" href="../styles/style.css" />
+    
+  <link rel="stylesheet" href="../styles/vak.css" />
+    <script src="../js/script.js" defer></script>
+</head>
 
-          <p class="temporary">
-            Leerdoel 3: Ik wil beter probleemoplossend leren denken door
-            technische problemen eerst zelfstandig proberen op te lossen samen
-            met documentatie, teamgenoten en verstandig AI gebruik. Dat houdt
-            in: juist AI te vragen om uitleg aanvullend op de documentatie,
-            zonder hele code stukken te laten genereren. Dit zorgt ervoor dat ik
-            die kennis beter oppak dan wanneer AI te veel voorzegt of genereerd.
-            Dit wil ik doen door zelf de tijd te nemen om een probleem op te
-            lossen, de bijbehorende documentatie opzoeken/vragen en op die
-            manier trial en error bezig te gaan. Pas als ik de tijd heb genomen
-            om dit te proberen kan ik AI gebruiken voor meer hulp.
-          </p>
+<body>
+  <div class="tv-outer">
+    <div class="screen">
+      <div class="screen-content">
+        <div class="ch-bar">
+          <span class="vak-banner">// MEESTERSCHAP · MEESTERPROEF</span>
+          <a href="../index.html" class="ch-back">
+            < terug naar home</a>
+        </div>
+
+        <div class="content">
+          <header class="vak-header">
+            <h1 class="vak-title">Meesterproef</h1>
+            <p class="vak-desc">
+              De finale van de minor...
+            </p>
+          </header>
+
+          <div class="sectie">
+            <h2 class="sectie-label">// De opdracht</h2>
+            <p class="sectie-body">
+              Als afsluiting van de minor hebben we 5 weken lang in teamverband gewerkt — Melvin, Dylan, Braham en ik
+              — aan een project voor een echte opdrachtgever. Aan het eind van elke week hadden we een contactmoment
+              waarbij we de voortgang bespraken, feedback ontvingen en deze de week erna toepasten.
+            </p>
+            <p class="sectie-body">
+              Het project was voor Ink, dat een digitale training heeft ontwikkeld voor ambtenaren om de openbare
+              ruimte toegankelijker te maken voor mensen met een beperking. De huidige training was onvoldoende en
+              had feedback gekregen van de Gemeente Amsterdam. Aan ons de taak om de training te verbeteren op twee
+              punten:
+            </p>
+            <ul class="sectie-body">
+              <li>Meer interactie en minder langdradig — gebruikers haken te veel af</li>
+              <li>Formeler taalgebruik en opzet, passender bij de doelgroep</li>
+            </ul>
+            <p class="sectie-body">
+              Dit deden we aan de hand van één volledig uitgewerkte module en een skeleton voor de overige twee. Het
+              grootste verbeterpunt pakten we aan door de training volledig interactief te maken via gamification:
+              minigames per beperking die je op een leuke manier bewust maken van de desbetreffende situatie.
+            </p>
+            <div class="iframe-container"><iframe src="https://ink-training.onrender.com/"
+                title="Ink training prototype" class="project-iframe" loading="lazy"></iframe></div>
+            <a href="https://github.com/Braham3030/Ink" class="project-link">Bekijk GitHub ></a>
+          </div>
+
+          <div class="sectie">
+            <h2 class="sectie-label">// Mijn inbreng</h2>
+            <p class="sectie-body">
+              Tijdens dit project had ik een aantal hoofdtaken en een rol.
+            </p>
+            <h3 class="subheader">Contactpersoon met opdrachtgever</h3>
+            <p class="sectie-body">
+              Als onderdeel van mijn leerdoel was ik de eindverantwoordelijke voor al het contact met de opdrachtgever
+              per e-mail. Ik heb verschillende e-mails opgesteld met vragen die we tijdens het proces hadden, de
+              uitnodiging voor de expo en de overdracht van het project. Tijdens de contactmomenten had ik bovendien
+              een proactieve houding en schreef ik alle feedback op die we terug kregen.
+            </p>
+            <h3 class="subheader">Styling door het gehele prototype</h3>
+            <p class="sectie-body">
+              Als hoofdtaak was ik verantwoordelijk voor bijna alle styling in het prototype. Ik heb de gehele
+              huisstijl opgezet en doorgetrokken door het prototype om alles consistent te maken. Ook heb ik gezorgd
+              dat alles responsive is met relatieve units zoals rem en em, clamps en media queries. Verder heb ik
+              gewerkt met de global CSS om componenten herbruikbaar te maken zoals de buttons, dialogue box en
+              multiple choice vragen. Ook heb ik de kleine details geregeld zoals de header, juiste margins en
+              paddings zodat bijna alles boven de scroll past. Na afronding van de minigames heb ik de styling
+              gecheckt en verbeterd waar nodig.
+            </p>
+            <h3 class="subheader">Visual minigame</h3>
+            <p class="sectie-body">
+              Ook heb ik de visual minigame volledig gemaakt, waarbij je een conversatie voert met Eduard, een persoon
+              met een opvallend uiterlijk. Bij deze minigame is het de bedoeling dat je Eduard niet anders behandelt
+              en een gewoon gesprek hebt.
+            </p>
+            <h3 class="subheader">Proactieve houding</h3>
+            <p class="sectie-body">
+              Tot slot heb ik mijn best gedaan om een proactieve houding te hebben gedurende het project om zo voor
+              een goede samenwerking te zorgen. Ik nam taken op me die pasten bij mij en rondde deze af, gaf
+              onderling altijd feedback en besprak wat er besproken moest worden.
+            </p>
+          </div>
+
+          <div class="sectie">
+            <h2 class="sectie-label">// Inzichten</h2>
+            <p class="sectie-body">
+              Ik ben erg tevreden met de samenwerking tijdens dit project. Ik neem de successen van deze
+              samenwerking zeker mee en heb gemerkt wat voor verschil een goede samenwerking kan maken. Denk hierbij
+              aan het efficiënt opdelen van taken gebaseerd op ieders sterke punten, een goede en leuke communicatie,
+              en werken met gemotiveerde teamgenoten. Ik gaf feedback en input wanneer ik dat nodig vond. Het is
+              belangrijk dat je uitspreekt wat je denkt en niet terughoudend bent.
+            </p>
+          </div>
+
+
+          <div class="vak-nav">
+            <a href="hackathon.html" class="vak-link">
+              < Hackathon</a>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+    <div class="tv-bezel-bottom">
+      <div class="tv-controls-left">
+        <div class="knob-wrap">
+          <div class="knob"></div><span class="knob-label">VOL</span>
+        </div>
+        <div class="knob-wrap">
+          <div class="knob"></div><span class="knob-label">CH</span>
+        </div>
+        <div class="knob-wrap">
+          <div class="knob" style="width:16px;height:16px"></div><span class="knob-label">EXTRA</span>
+        </div>
+        <div class="ch-dots">
+          <div class="ch-dot-btn"></div>
+          <div class="ch-dot-btn active"></div>
+          <div class="ch-dot-btn"></div>
+        </div>
+      </div>
+
+
+      <div class="theme-switcher">
+        <button class="theme-btn theme-green" data-theme="" title="Green"></button>
+        <button class="theme-btn theme-bw" data-theme="bw" title="Zwart-Wit"></button>
+        <button class="theme-btn theme-red" data-theme="red" title="Red"></button>
+        <button class="theme-btn theme-blue" data-theme="blue" title="Blue"></button>
+        <button class="theme-btn theme-synthwave" data-theme="synthwave" title="Synthwave"></button>
+      </div>
+
+
+      <div class="tv-controls-right">
+        <div class="speaker-grill">
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+          <div class="grill-hole"></div>
+        </div>
+        <div class="power-led"></div>
+      </div>
+    </div>
+</div>
+</body>
+
 </html>

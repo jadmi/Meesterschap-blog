@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 28" width="32" height="32">
+  <!-- TV body / bezel -->
+  <rect x="1" y="4" width="30" height="22" rx="3" ry="3" fill="#1a1208" stroke="#3a2e10" stroke-width="1"/>
+
+  <!-- Screen area -->
+  <rect x="3" y="6" width="22" height="17" rx="1.5" ry="1.5" fill="#0a1a08"/>
+
+  <!-- CRT green phosphor glow (subtle) -->
+  <rect x="3" y="6" width="22" height="17" rx="1.5" ry="1.5" fill="url(#screenGlow)" opacity="0.6"/>
+
+  <!-- Screen text: BLOG -->
+  <text x="14" y="17" font-family="monospace" font-size="6.5" font-weight="bold"
+        fill="#7fff00" text-anchor="middle" letter-spacing="0.5"
+        style="text-shadow: 0 0 4px #7fff00;">BLOG</text>
+
+  <!-- Scanlines overlay -->
+  <line x1="3" y1="8.5"  x2="25" y2="8.5"  stroke="#000" stroke-width="0.4" opacity="0.4"/>
+  <line x1="3" y1="10.5" x2="25" y2="10.5" stroke="#000" stroke-width="0.4" opacity="0.4"/>
+  <line x1="3" y1="12.5" x2="25" y2="12.5" stroke="#000" stroke-width="0.4" opacity="0.4"/>
+  <line x1="3" y1="14.5" x2="25" y2="14.5" stroke="#000" stroke-width="0.4" opacity="0.4"/>
+  <line x1="3" y1="16.5" x2="25" y2="16.5" stroke="#000" stroke-width="0.4" opacity="0.4"/>
+  <line x1="3" y1="18.5" x2="25" y2="18.5" stroke="#000" stroke-width="0.4" opacity="0.4"/>
+  <line x1="3" y1="20.5" x2="25" y2="20.5" stroke="#000" stroke-width="0.4" opacity="0.4"/>
+
+  <!-- Right side panel (knobs area) -->
+  <rect x="26" y="6" width="4" height="17" rx="1" fill="#111008"/>
+
+  <!-- Knob top -->
+  <circle cx="28" cy="10" r="1.5" fill="#2a2010" stroke="#4a3a18" stroke-width="0.5"/>
+  <line x1="28" y1="8.8" x2="28" y2="10" stroke="#7a6030" stroke-width="0.6"/>
+
+  <!-- Knob bottom -->
+  <circle cx="28" cy="19" r="1.5" fill="#2a2010" stroke="#4a3a18" stroke-width="0.5"/>
+  <line x1="28" y1="17.8" x2="28" y2="19" stroke="#7a6030" stroke-width="0.6"/>
+
+
+
+
+
+  <!-- Screen glow gradient -->
+  <defs>
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%"   stop-color="#1a4a10"/>
+      <stop offset="100%" stop-color="#050f04"/>
+    </radialGradient>
+  </defs>
+</svg>
